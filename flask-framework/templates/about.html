@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block content %}
+
+<br>
+<br>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h2 class="w3-center">ABOUT ME</h2>
+<br>
+
+  <h3 class="w3-center">Jianlei (Ella) Chen </h3>
+  <p class="w3-center"><em>Highly Motivated Data Scientist, ready to use data science tools to make a real-world impact.</em></p>
+  <br>
+  <h3 class="w3-center">Biography </h3>
+
+  <p>In the age of Big Data, the skills to find useful insights from data and draw conclusions are essential for business success. My name is Jianlei Chen, I am currently a Fellow at The Data Incubator. I recently earned my PhD in Physics from The George Washington University with a certificate in Data Science. I am an energetic, optimistic and hard-working professional whose is always ready for new challenges. My deep interest in data science led me to many projects on my own. I developed Yelp recommender system using Natural Langue Processing techniques, and development the risk factor prediction for peer to peer lending investors. I believe my data science background, my analytical problem solving skills and my ability to present ideas in front of different audience will make me a great data scientist in the industry.
+</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Jianlei Chen</b></p><br>
+      <img src="../static/jianlei_chen.png" class="w3-round w3-image" alt="Photo of Me" width="300" height="300">
+    </div>
+
+    <!-- Hide this text on small devices -->
+
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+ <h3 >Education </h3>
+<p><b>The George Washington University  Washington, DC </b></p>
+<p>Aug 2012 - Dec 2017</p>
+<p><em>PhD in Physics</em> GPA: 3.85/4.00</p>
+<p><em>Data Science Certificate</em></p> GPA: 3.92/4.00 
+<br>
+<p><b>
+Emporia State University  Emporia, KS </b></p>
+<p> Aug 2009 - May 2012</p>
+<p><em>
+Bachelor of Science in Physics</em> GPA: 3.82/4.00</p>
+<p><em>Minors in Mathematics and Leadership</em></p>
+<p> Distinguished Senior (1 / 1500)</p>
+ <p>Shepard Scholar (12 / 6000) </p>
+
+    </div>
+  </div>
+
+
+  <h3 class="w3-center"> Technical Skills </h3>
+  <div>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Python</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>C++</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>SQL</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Matlab</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>R</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+  </div>
+</div>
+<div>
+    <h3 class="w3-center"> Experience </h3>
+    <p><b>Baidu, Inc Data Scientist Intern   (Shenzhen, China) </b></p>
+<p>Jun 2016 – Jul 2016</p>
+<p>Worked on the Baidu Digital Advertising project. Programed interface between front end and database to create, read, update and delete operations in PHP and SQL.</p>
+<p>Designed dashboard for user to monitor ads performance including conversion rate, click through rate, etc.</p> 
+<p>Designed statistical test to improve ad targeting performance; Generated 10K revenue per month.</p>
+<br>
+<p><b>
+The George Washington University Research Assistant (Washington, DC) </b></p>
+<p>  Aug 2012 – Dec 2017 </p>
+<p>Developed stochastic and deterministic models for cell migration to understand cancer cell migration.</p>
+<p>Built an automatic data process tools for raw simulated data (~1TB/week) and provide visualization.</p>
+<p> Performed regression and classification to predict future cell migration behaviors.</p>
+</div>
+
+<h3 class="w3-center"> Projects </h3>
+    <p><b>Credit Card Fraud Detection</b></p>
+
+<p>Performed machine learning on highly unbalanced data of 284,807 credit card transactions, trained model based on 28 extracted features to detect 0.17% frauds. </p>
+<p>Fitted classification model such as SVM classifier and logistic regression classifier to identify frauds</p> 
+<p>Used grid search to optimize parameter. Selected important evaluation metric based on business type, the model achieved 99.6% accuracy and 82% recall.</p>
+<br>
+<p><b>
+Education Funding Outcome Prediction (Hackathon sponsored by IBM)  </b></p>
+<p> Retrieve government education funding data with students’ academic performance in year 2010-2016. </p>
+<p> Perform data cleaning, analyzed the trends and correlation, and identified that funding of previous 4 years and came up with fund evaluation metric such as student’s performance and graduation rate</p>
+<p> Use polynomial regression to identify that more funding will increase students’ performance, but marginal effects decrease. Won the 1st place in 15 teams.</p>
+<br>
+<p><b>
+Yelp Recommender System (Natural Langue Processing) </b></p>
+<p> Processed 5 GB of Yelp user review data, extracted 5000 features on reviews using bag of words. </p>
+<p> Used PCA to reduce dimension, created similar review search engine and review classifier.</p>
+<p> Built both item based and user based recommender system using unsupervised machine learning.</p>
+<br>
+<p><b>
+A Molecule Based Reaction-Transportation Model for Cell Oscillatory Migration </b></p>
+<p> Developed PDE model to study the oscillatory migration of the human fibroscaroma cell, which could lead to new directions of cancer treatment and potentially increases the 5-year survival rate from 16% to 83%.</p>
+<p> Identified relevant features of oscillatory migration, analyzed the features and made theoretical prediction that physical length and mechanical force of the cell is critical to the phase of oscillation.</p>
+
+
+</div>
+
+
+
+</div>
+
+  {% endblock %}

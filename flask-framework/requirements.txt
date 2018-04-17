@@ -1,0 +1,6 @@
+bokeh==0.12.14
+Flask==0.12.2
+requests==2.18.4
+pandas==0.22.0
+gunicorn
+boto

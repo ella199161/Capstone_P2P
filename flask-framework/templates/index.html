@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+
+<br>
+<br>
+<div align = "center"> <h1>Welcome </h1> 
+<p>Many people have money sitting in a bank account seek ways to invest. Comparing to the rather unstable stock market, Peer to Peer(P2P) would be a great choice. P2P lending is the method of lending money to individuals or businesses through online services. On the investor's side, the investment return is much higher than bank CD account, and much safer than stock market. </p>
+
+<p>I used data sets from the two industry lead companies: Prosper and Lending Club.  I analyzed the P2P lending data for the past 10 years and run feature engineering and feature selection to construct a regression model to predict the interest rate of a given loan. On the investors’ side, I also developed a model to classifier whether a loan will be paid off on time or not as well as the risk associated to the loan. With my product, investors can make safer and more predicted investment. </p>
+
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">I would like to:</h3>
+           <a href="/project">
+      <button class="w3-button w3-black w3-section" >
+        <i class="fa fa-paper-plane"></i> Predict My Investment Risk  
+      </button></a>
+
+       <a href="/model">
+      <button class="w3-button w3-black w3-section" >
+        <i class="fa fa-paper-plane"></i> Learn About The Model
+      </button></a>
+             <a href="/about">
+      <button class="w3-button w3-black w3-section">
+        <i class="fa fa-paper-plane"></i> Learn About Jianlei Chen 
+      </button></a>
+
+</div>
+
+
+
+<div class="bk-root">
+    <div class="bk-plotdiv" id="adb22644-b757-47b3-b2ad-9e0c94ce93b8"></div>
+</div>
+
+<script src="../static/prosper_script_GvsI.js"></script>
+
+<!--- Prosper lending map-->
+<div class="bk-root">
+    <div class="bk-plotdiv" id="7f772c7d-6f82-4323-bfe3-67850347a7aa"></div>
+</div>
+<script src="../static/Prosper_map.js"></script>
+
+
+<!--- prosper home ownership
+
+-->
+<div class="bk-root">
+    <div class="bk-plotdiv" id="bacf91b4-1d9f-4998-8f8f-271869453596"></div>
+</div>
+<script src="../static/prosper_script_HvsI.js"></script>
+
+
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+{% endblock %}
